@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table shohabbos_itmaker_store_items'
+    - builder_table_create_shohabbos_itmaker_store_items.php
+1.0.3:
+    - 'Updated table shohabbos_itmaker_store_items'
+    - builder_table_update_shohabbos_itmaker_store_items.php
+1.0.4:
+    - 'Updated table shohabbos_itmaker_store_items'
+    - builder_table_update_shohabbos_itmaker_store_items2.php
+1.0.5:
+    - 'Updated table shohabbos_itmaker_store_items'
+    - builder_table_update_shohabbos_itmaker_store_items3.php
+1.0.6:
+    - 'Updated table shohabbos_scriptshop_store_items'
+    - builder_table_update_shohabbos_scriptshop_sripts.php
+1.0.7:
+    - 'Updated table shohabbos_scriptshop_sripts'
+    - builder_table_update_shohabbos_scriptshop_scripts.php
+1.0.8:
+    - 'Created table shohabbos_scriptshop_orders'
+    - builder_table_create_shohabbos_scriptshop_orders.php
+1.0.9:
+    - 'Updated table shohabbos_scriptshop_orders'
+    - builder_table_update_shohabbos_scriptshop_orders.php

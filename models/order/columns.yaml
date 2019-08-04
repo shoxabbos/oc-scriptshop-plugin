@@ -1,0 +1,45 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+        sortable: true
+    phone:
+        label: phone
+        type: text
+        searchable: true
+        sortable: true
+    script_id:
+        label: script_id
+        type: number
+        sortable: true
+    amount:
+        label: amount
+        type: number
+        sortable: true
+    detail:
+        label: detail
+        type: text
+        invisible: true
+        sortable: true
+    email:
+        label: email
+        type: text
+        searchable: true
+        invisible: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true
+        sortable: true
+    is_paid:
+        label: 'Is paid'
+        type: switch
+        invisible: false
+        sortable: true

@@ -1,0 +1,58 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+        sortable: true
+    title:
+        label: title
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: description
+        type: text
+        searchable: true
+        invisible: true
+        sortable: true
+    excerpt:
+        label: excerpt
+        type: text
+        searchable: true
+        sortable: true
+    price:
+        label: price
+        type: number
+        sortable: true
+    demo_link:
+        label: demo_link
+        type: text
+        searchable: true
+        invisible: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true
+        sortable: true
+    slug:
+        label: slug
+        type: text
+        searchable: true
+        invisible: true
+        sortable: true
+    details:
+        label: 'shohabbos.scriptshop::lang.script.details'
+        type: text
+        searchable: true
+        invisible: true
+    sort:
+        label: Sort
+        type: number
+        invisible: true
+        sortable: true

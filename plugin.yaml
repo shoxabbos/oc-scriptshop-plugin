@@ -1,0 +1,20 @@
+plugin:
+    name: 'shohabbos.scriptshop::lang.plugin.name'
+    description: 'shohabbos.scriptshop::lang.plugin.description'
+    author: Shohabbos
+    icon: oc-icon-cog
+    homepage: 'https://itmaker.uz'
+navigation:
+    itmkaer-menu-main:
+        label: 'shohabbos.scriptshop::lang.menu.main_title'
+        url: shohabbos/scriptshop/scripts
+        icon: icon-life-ring
+        sideMenu:
+            scriptshop-menu-scrips:
+                label: Scripts
+                url: shohabbos/scriptshop/scripts
+                icon: icon-github
+            scriptshop-menu-orders:
+                label: Orders
+                url: shohabbos/scriptshop/orders
+                icon: icon-slack

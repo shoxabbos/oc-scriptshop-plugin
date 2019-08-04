@@ -1,0 +1,5 @@
+title: Script
+modelClass: Shohabbos\ScriptShop\Models\Script
+nameFrom: sort
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+name: Script
+form: $/shohabbos/scriptshop/models/script/fields.yaml
+modelClass: Shohabbos\ScriptShop\Models\Script
+defaultRedirect: shohabbos/scriptshop/scripts
+create:
+    redirect: 'shohabbos/scriptshop/scripts/update/:id'
+    redirectClose: shohabbos/scriptshop/scripts
+update:
+    redirect: shohabbos/scriptshop/scripts
+    redirectClose: shohabbos/scriptshop/scripts
