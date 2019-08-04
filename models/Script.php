@@ -23,7 +23,8 @@ class Script extends Model
     public $table = 'shohabbos_scriptshop_scripts';
 
     public $attachOne = [
-        'poster' => 'System\Models\File'
+        'poster' => 'System\Models\File',
+        'file' => 'System\Models\File'
     ];
 
     public $attachMany = [

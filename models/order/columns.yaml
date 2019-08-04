@@ -43,3 +43,6 @@ columns:
         type: switch
         invisible: false
         sortable: true
+    user_id:
+        label: 'User ID'
+        type: number
