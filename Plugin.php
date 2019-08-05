@@ -12,8 +12,8 @@ class Plugin extends PluginBase
 
     public function boot() {
     	
-    	User::extend(function() {
-    		$model->hasOne['profile'] = ['Shohabbos\ScriptShop\Models\Order'];
+    	User::extend(function($model) {
+    		$model->hasMany['orders'] = ['Shohabbos\ScriptShop\Models\Order'];
     	});
 
 

@@ -27,3 +27,6 @@
 1.0.10:
     - 'Updated table shohabbos_scriptshop_orders'
     - builder_table_update_shohabbos_scriptshop_orders_2.php
+1.0.11:
+    - 'Updated table shohabbos_scriptshop_orders'
+    - builder_table_update_shohabbos_scriptshop_orders_3.php

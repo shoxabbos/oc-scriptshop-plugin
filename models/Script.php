@@ -30,4 +30,9 @@ class Script extends Model
     public $attachMany = [
         'screenshots' => 'System\Models\File'
     ];
+
+    public $hasMany = [
+        'orders' => Order::class
+    ];
+    
 }

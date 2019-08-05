@@ -21,7 +21,9 @@ class Order extends Model
     public $table = 'shohabbos_scriptshop_orders';
 
     public $belongsTo = [
-        'user' => 'RainLab\User\Models\User'
+        'user' => 'RainLab\User\Models\User',
+        'script' => Script::class,
     ];
     
+    protected $guarded = ['id'];
 }
