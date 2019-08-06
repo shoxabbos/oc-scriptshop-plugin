@@ -1,0 +1,13 @@
+{% set prefix = 'OFFLINE\\MicroCart\\Classes\\Payments\\PaymentResult::' %}
+
+{% if __SELF__.result == constant(prefix ~ 'RESULT_CANCELLED') %}
+    Checkout cancelled
+{% elseif __SELF__.result == constant(prefix ~ 'RESULT_FAILED') %}
+    Checkout failed
+{% elseif __SELF__.result == constant(prefix ~ 'RESULT_SUCCEEDED') %}
+    Checkout successful
+{% else %}
+    {% partial __SELF__ ~ '::form' %}
+{% endif %}
+
+{% partial __SELF__ ~ '::scripts' %}
