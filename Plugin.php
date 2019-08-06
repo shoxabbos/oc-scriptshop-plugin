@@ -11,12 +11,11 @@ class Plugin extends PluginBase
     ];
 
     public function boot() {
-    	
     	User::extend(function($model) {
     		$model->hasMany['orders'] = ['Shohabbos\ScriptShop\Models\Order'];
     	});
-
-
     }
+
+    
 
 }
