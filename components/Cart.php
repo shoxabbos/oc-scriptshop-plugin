@@ -1,6 +1,8 @@
 <?php namespace Shohabbos\ScriptShop\Components;
 
+use OFFLINE\MicroCart\Models\Cart as CartModel;
 use OFFLINE\MicroCart\Models\CartItem;
+use Shohabbos\ScriptShop\Models\Script;
 use OFFLINE\MicroCart\Classes\Payments\PaymentRedirector;
 
 class Cart extends \OFFLINE\MicroCart\Components\Cart
@@ -18,14 +20,30 @@ class Cart extends \OFFLINE\MicroCart\Components\Cart
 
     public function onAdd()
     {
+        $script = Script::find(input('id'));
+
+        if (!$script) {
+            throw new \ValidationException(['name' => 'Script not found!']);
+        }
+
         $item           = new CartItem();
-        $item->name     = 'Your product';
-        $item->quantity = random_int(1, 4);
-        $item->price    = 100.00;
+        $item->code     = $script->id;
+        $item->name     = $script->title;
+        $item->quantity = 1;
+        $item->price    = $script->price;
 
-        $this->cart->add($item);
+        $this->cart->ensure($item);
+        $this->refreshCart();
 
-        return $this->refreshCart();
+        return \Redirect::refresh();
+    }
+
+    public function onRemoveFromCart() {
+        $cart = CartModel::fromSession();
+
+        if ($cart) {
+            $cart->remove(input('id'));
+        }
     }
 
     

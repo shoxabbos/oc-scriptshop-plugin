@@ -1,6 +1,7 @@
 <?php namespace Shohabbos\ScriptShop\Models;
 
 use Model;
+use OFFLINE\MicroCart\Models\CartItem;
 
 /**
  * Model
@@ -33,6 +34,10 @@ class Script extends Model
 
     public $hasMany = [
         'orders' => Order::class
+    ];
+
+    public $belongsTo = [
+        'cartitem' => CartItem::class
     ];
     
 }
